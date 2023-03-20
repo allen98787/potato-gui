@@ -1,0 +1,11 @@
+git clone https://github.com/allen98787/potato-gui.git
+
+向Local git 新增所有檔案
+git add .
+設定使用者帳戶資訊
+git config --global user.email "allen98787@gmail.com"
+git config --global user.name "allen98787"
+標記該次Push的註解
+git commit -m "3/13 button"
+將程式碼Push到GitHub上
+git push -u origin main
