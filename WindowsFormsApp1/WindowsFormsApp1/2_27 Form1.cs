@@ -54,6 +54,30 @@ namespace WindowsFormsApp1
             Form form_button = new button_call();
             form_button.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string temp = label2.Text;
+            int count = 0 ;
+            try
+            {
+                count = Int32.Parse(temp) + 1;
+            }
+            catch (Exception e1)
+            {
+                label2.Text = "0";
+            }
+
+            //label2.Text = count+""
+            label2.Text = count.ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            short sizeNum = 10;
+            button4.Size = new Size(button4.Width + sizeNum, button4.Height + sizeNum);
+            button4.Location = new Point(button4.Location.X - sizeNum/2, button4.Location.Y - sizeNum/2);
+        }
     }
 
     
