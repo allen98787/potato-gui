@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
 
         private void label1_Click(object sender, EventArgs e) //標籤1
         {
-           MessageBox.Show("123");
+            MessageBox.Show("123");
         }
 
         private void button1_Click(object sender, EventArgs e)//按鈕1
@@ -58,7 +58,7 @@ namespace WindowsFormsApp1
         private void button3_Click(object sender, EventArgs e)
         {
             string temp = label2.Text;
-            int count = 0 ;
+            int count = 0;
             try
             {
                 count = Int32.Parse(temp) + 1;
@@ -66,20 +66,49 @@ namespace WindowsFormsApp1
             catch (Exception e1)
             {
                 label2.Text = "0";
-            }
 
+            }
             //label2.Text = count+""
             label2.Text = count.ToString();
-        }
+            if (count < 100)
+            {
+                if (count >= 0)
+                {
+                    progressBar1.Value = count;
+                }
+            }
+            
 
-        private void button4_Click(object sender, EventArgs e)
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string temp = label2.Text;
+            int count = 0;
+            try
+            {
+                count = Int32.Parse(temp) - 1;
+            }
+            catch (Exception e1)
+            {
+                label2.Text = "0";
+            }
+            label2.Text = count.ToString();
+            if (count < 100)
+            {
+                if (count >= 0)
+                {
+                    progressBar1.Value = count;
+                }
+            }
+            
+        }
+          private void button4_Click(object sender, EventArgs e)
         {
             short sizeNum = 10;
             button4.Size = new Size(button4.Width + sizeNum, button4.Height + sizeNum);
-            button4.Location = new Point(button4.Location.X - sizeNum/2, button4.Location.Y - sizeNum/2);
+            button4.Location = new Point(button4.Location.X - sizeNum / 2, button4.Location.Y - sizeNum / 2);
         }
+
+  
     }
-
-    
-
 }
