@@ -46,25 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="3_13 button_call .cs">
+    <Compile Include="form1 3_13 button_call .cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="3_13 button_call .Designer.cs">
-      <DependentUpon>3_13 button_call .cs</DependentUpon>
+    <Compile Include="form1 3_13 button_call .Designer.cs">
+      <DependentUpon>form1 3_13 button_call .cs</DependentUpon>
     </Compile>
-    <Compile Include="2_27 Form1.cs">
+    <Compile Include="Form Main 2_27 .cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="2_27 Form1.Designer.cs">
-      <DependentUpon>2_27 Form1.cs</DependentUpon>
+    <Compile Include="Form Main 2_27 .Designer.cs">
+      <DependentUpon>Form Main 2_27 .cs</DependentUpon>
+    </Compile>
+    <Compile Include="form2 4_10 textbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form2 4_10 textbox.Designer.cs">
+      <DependentUpon>form2 4_10 textbox.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="3_13 button_call .resx">
-      <DependentUpon>3_13 button_call .cs</DependentUpon>
+    <EmbeddedResource Include="form1 3_13 button_call .resx">
+      <DependentUpon>form1 3_13 button_call .cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="2_27 Form1.resx">
-      <DependentUpon>2_27 Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Form Main 2_27 .resx">
+      <DependentUpon>Form Main 2_27 .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form2 4_10 textbox.resx">
+      <DependentUpon>form2 4_10 textbox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
