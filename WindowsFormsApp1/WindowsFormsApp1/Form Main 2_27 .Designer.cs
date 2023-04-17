@@ -34,6 +34,7 @@ namespace WindowsFormsApp1
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.button2 = new System.Windows.Forms.Button();
             this.button_to_text = new System.Windows.Forms.Button();
+            this.exam1_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -72,11 +73,22 @@ namespace WindowsFormsApp1
             this.button_to_text.UseVisualStyleBackColor = true;
             this.button_to_text.Click += new System.EventHandler(this.button_to_text_Click);
             // 
+            // exam1_button
+            // 
+            this.exam1_button.Location = new System.Drawing.Point(145, 186);
+            this.exam1_button.Name = "exam1_button";
+            this.exam1_button.Size = new System.Drawing.Size(75, 23);
+            this.exam1_button.TabIndex = 14;
+            this.exam1_button.Text = "期中考 4/17";
+            this.exam1_button.UseVisualStyleBackColor = true;
+            this.exam1_button.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 470);
+            this.Controls.Add(this.exam1_button);
             this.Controls.Add(this.button_to_text);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -93,6 +105,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button_to_text;
+        private System.Windows.Forms.Button exam1_button;
     }
 }
 

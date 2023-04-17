@@ -54,6 +54,12 @@ namespace WindowsFormsApp1
             form_button.Show();
         }
 
+        private void button3_Click(object sender, EventArgs e)//exam1_button
+        {
+            Form form_button = new form3_4_17_exam1();
+            form_button.Show();
+        }
+
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -63,5 +69,7 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        
     }
 }

@@ -22,3 +22,4 @@ D:\程式設計\github\potato-gui\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Wi
 D:\程式設計\github\potato-gui\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\程式設計\github\potato-gui\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\MEGAS\Desktop\potato-gui\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\MEGAS\Desktop\potato-gui\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.form3_4_17_exam1.resources

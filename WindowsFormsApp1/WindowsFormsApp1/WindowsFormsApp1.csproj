@@ -64,6 +64,12 @@
     <Compile Include="form2 4_10 textbox.Designer.cs">
       <DependentUpon>form2 4_10 textbox.cs</DependentUpon>
     </Compile>
+    <Compile Include="form3 4_17 exam1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form3 4_17 exam1.Designer.cs">
+      <DependentUpon>form3 4_17 exam1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="form1 3_13 button_call .resx">
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form2 4_10 textbox.resx">
       <DependentUpon>form2 4_10 textbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form3 4_17 exam1.resx">
+      <DependentUpon>form3 4_17 exam1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
