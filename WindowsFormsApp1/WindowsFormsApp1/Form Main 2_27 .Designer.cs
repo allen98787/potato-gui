@@ -35,6 +35,7 @@ namespace WindowsFormsApp1
             this.button2 = new System.Windows.Forms.Button();
             this.button_to_text = new System.Windows.Forms.Button();
             this.exam1_button = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -83,6 +84,10 @@ namespace WindowsFormsApp1
             this.exam1_button.UseVisualStyleBackColor = true;
             this.exam1_button.Click += new System.EventHandler(this.button3_Click);
             // 
+            // toolTip1
+            // 
+            this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -106,6 +111,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button_to_text;
         private System.Windows.Forms.Button exam1_button;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

@@ -41,5 +41,29 @@ namespace WindowsFormsApp1
             // MessageBox.Show(str);
         }
 
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void result_Click(object sender, EventArgs e)
+        {
+            int add1 = 0, add2 = 0;
+            try
+            {
+                add1 = Int32.Parse(TB_add1.Text);
+                add2 = Int32.Parse(TB_add2.Text);
+                //
+                //count = Int32.Parse(temp) + 1;
+            }
+            catch (System.FormatException)
+            {
+                MessageBox.Show("請輸入數字");
+            }
+            TB_result.Text = (add1 + add2).ToString();
+
+
+
+        }
     }
 }
