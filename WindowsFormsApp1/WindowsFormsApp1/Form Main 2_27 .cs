@@ -50,14 +50,14 @@ namespace WindowsFormsApp1
             //Form form_button = new button_call();
             //form_button.Show();
 
-            Form form_button = new Form2();
+            Form form_button = new Form2();    //需修改
             form_button.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)//exam1_button
         {
-            Form form_button = new form3_4_17_exam1();
-            form_button.Show();
+            Form form_button = new form3_4_17_exam1();    //需修改
+            form_button.Show(); 
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -73,6 +73,12 @@ namespace WindowsFormsApp1
         private void toolTip1_Popup(object sender, PopupEventArgs e)
         {
 
+        }
+
+        private void Extra_button1_Click(object sender, EventArgs e)
+        {
+            Form formEX_code = new FormEX_5_1();
+            formEX_code.Show();
         }
     }
 }

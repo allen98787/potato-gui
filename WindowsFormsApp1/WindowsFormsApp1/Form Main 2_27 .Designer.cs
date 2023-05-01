@@ -36,6 +36,7 @@ namespace WindowsFormsApp1
             this.button_to_text = new System.Windows.Forms.Button();
             this.exam1_button = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.Extra_button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -88,11 +89,22 @@ namespace WindowsFormsApp1
             // 
             this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
             // 
+            // Extra_button1
+            // 
+            this.Extra_button1.Location = new System.Drawing.Point(288, 138);
+            this.Extra_button1.Name = "Extra_button1";
+            this.Extra_button1.Size = new System.Drawing.Size(75, 23);
+            this.Extra_button1.TabIndex = 15;
+            this.Extra_button1.Text = "終極密碼";
+            this.Extra_button1.UseVisualStyleBackColor = true;
+            this.Extra_button1.Click += new System.EventHandler(this.Extra_button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 470);
+            this.Controls.Add(this.Extra_button1);
             this.Controls.Add(this.exam1_button);
             this.Controls.Add(this.button_to_text);
             this.Controls.Add(this.button2);
@@ -112,6 +124,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button_to_text;
         private System.Windows.Forms.Button exam1_button;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button Extra_button1;
     }
 }
 

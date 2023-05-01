@@ -70,6 +70,12 @@
     <Compile Include="form3 4_17 exam1.Designer.cs">
       <DependentUpon>form3 4_17 exam1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEX 5_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEX 5_1.Designer.cs">
+      <DependentUpon>FormEX 5_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="form1 3_13 button_call .resx">
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form3 4_17 exam1.resx">
       <DependentUpon>form3 4_17 exam1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEX 5_1.resx">
+      <DependentUpon>FormEX 5_1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
