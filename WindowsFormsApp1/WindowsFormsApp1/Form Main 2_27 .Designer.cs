@@ -53,7 +53,6 @@ namespace WindowsFormsApp1
             // 
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
-            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
             // button2
             // 
@@ -85,9 +84,7 @@ namespace WindowsFormsApp1
             this.exam1_button.UseVisualStyleBackColor = true;
             this.exam1_button.Click += new System.EventHandler(this.button3_Click);
             // 
-            // toolTip1
-            // 
-            this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
+
             // 
             // Extra_button1
             // 
@@ -111,7 +108,6 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }

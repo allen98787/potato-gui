@@ -18,10 +18,6 @@ namespace WindowsFormsApp1
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void label1_Click(object sender, EventArgs e) //標籤1
         {
@@ -34,10 +30,6 @@ namespace WindowsFormsApp1
 
         }
 
-        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)//工作列圖示
-        {
-
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -60,20 +52,7 @@ namespace WindowsFormsApp1
             form_button.Show(); 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-
-        }
+  
 
         private void Extra_button1_Click(object sender, EventArgs e)
         {

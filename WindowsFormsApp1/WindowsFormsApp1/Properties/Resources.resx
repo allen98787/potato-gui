@@ -121,4 +121,10 @@
   <data name="下載" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\下載.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="leo-pointing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leo-pointing.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spider_Man_meme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spider_Man_meme.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

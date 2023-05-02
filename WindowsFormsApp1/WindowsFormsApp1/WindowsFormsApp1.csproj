@@ -119,5 +119,11 @@
   <ItemGroup>
     <None Include="Resources\下載.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leo-pointing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spider_Man_meme.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

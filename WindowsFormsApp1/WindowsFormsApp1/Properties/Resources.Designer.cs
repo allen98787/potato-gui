@@ -19,7 +19,7 @@ namespace WindowsFormsApp1.Properties {
     // 類別透過 ResGen 或 Visual Studio 這類工具。
     // 若要加入或移除成員，請編輯您的 .ResX 檔，然後重新執行 ResGen
     // (利用 /str 選項)，或重建您的 VS 專案。
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,26 @@ namespace WindowsFormsApp1.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap leo_pointing {
+            get {
+                object obj = ResourceManager.GetObject("leo-pointing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Spider_Man_meme {
+            get {
+                object obj = ResourceManager.GetObject("Spider_Man_meme", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
