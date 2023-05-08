@@ -37,6 +37,7 @@ namespace WindowsFormsApp1
             this.exam1_button = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.Extra_button1 = new System.Windows.Forms.Button();
+            this.Timer_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -70,7 +71,7 @@ namespace WindowsFormsApp1
             this.button_to_text.Name = "button_to_text";
             this.button_to_text.Size = new System.Drawing.Size(75, 23);
             this.button_to_text.TabIndex = 13;
-            this.button_to_text.Text = "text 4/10";
+            this.button_to_text.Text = "text 計算機 4/10";
             this.button_to_text.UseVisualStyleBackColor = true;
             this.button_to_text.Click += new System.EventHandler(this.button_to_text_Click);
             // 
@@ -78,29 +79,38 @@ namespace WindowsFormsApp1
             // 
             this.exam1_button.Location = new System.Drawing.Point(145, 186);
             this.exam1_button.Name = "exam1_button";
-            this.exam1_button.Size = new System.Drawing.Size(75, 23);
+            this.exam1_button.Size = new System.Drawing.Size(122, 23);
             this.exam1_button.TabIndex = 14;
             this.exam1_button.Text = "期中考 4/17";
             this.exam1_button.UseVisualStyleBackColor = true;
             this.exam1_button.Click += new System.EventHandler(this.button3_Click);
             // 
-
-            // 
             // Extra_button1
             // 
             this.Extra_button1.Location = new System.Drawing.Point(288, 138);
             this.Extra_button1.Name = "Extra_button1";
-            this.Extra_button1.Size = new System.Drawing.Size(75, 23);
+            this.Extra_button1.Size = new System.Drawing.Size(132, 23);
             this.Extra_button1.TabIndex = 15;
-            this.Extra_button1.Text = "終極密碼";
+            this.Extra_button1.Text = "終極密碼 5/1";
             this.Extra_button1.UseVisualStyleBackColor = true;
             this.Extra_button1.Click += new System.EventHandler(this.Extra_button1_Click);
+            // 
+            // Timer_button
+            // 
+            this.Timer_button.Location = new System.Drawing.Point(20, 240);
+            this.Timer_button.Name = "Timer_button";
+            this.Timer_button.Size = new System.Drawing.Size(92, 24);
+            this.Timer_button.TabIndex = 16;
+            this.Timer_button.Text = "計時器 5/8";
+            this.Timer_button.UseVisualStyleBackColor = true;
+            this.Timer_button.Click += new System.EventHandler(this.Timer_button_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 470);
+            this.Controls.Add(this.Timer_button);
             this.Controls.Add(this.Extra_button1);
             this.Controls.Add(this.exam1_button);
             this.Controls.Add(this.button_to_text);
@@ -121,6 +131,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button exam1_button;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button Extra_button1;
+        private System.Windows.Forms.Button Timer_button;
     }
 }
 

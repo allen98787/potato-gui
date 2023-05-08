@@ -59,5 +59,11 @@ namespace WindowsFormsApp1
             Form formEX_code = new FormEX_5_1();
             formEX_code.Show();
         }
+
+        private void Timer_button_Click(object sender, EventArgs e)
+        {
+            Form form4_timer = new Form4_5_8();
+            form4_timer.Show();
+        }
     }
 }
