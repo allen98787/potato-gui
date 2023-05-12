@@ -39,20 +39,16 @@ namespace WindowsFormsApp1
 
         private void button_to_text_Click(object sender, EventArgs e)
         {
-            //Form form_button = new button_call();
-            //form_button.Show();
-
-            Form form_button = new Form2();    //需修改
-            form_button.Show();
+     
+            Form form_textbox = new Form2();    
+            form_textbox.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)//exam1_button
+        private void button3_Click(object sender, EventArgs e)
         {
-            Form form_button = new form3_4_17_exam1();    //需修改
-            form_button.Show(); 
+            Form form_examl = new form3_4_17_exam1();    
+            form_examl.Show(); 
         }
-
-  
 
         private void Extra_button1_Click(object sender, EventArgs e)
         {
