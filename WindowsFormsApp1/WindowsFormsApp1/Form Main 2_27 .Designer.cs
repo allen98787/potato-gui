@@ -29,39 +29,30 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.button2 = new System.Windows.Forms.Button();
             this.button_to_text = new System.Windows.Forms.Button();
             this.exam1_button = new System.Windows.Forms.Button();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.Extra_button1 = new System.Windows.Forms.Button();
             this.Timer_button = new System.Windows.Forms.Button();
+            this.checkbox_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(27, 172);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(20, 138);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 29);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "button 3/13";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(27, 232);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(20, 186);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 29);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 6;
             this.button2.Text = "Call form 3/13";
             this.button2.UseVisualStyleBackColor = true;
@@ -69,10 +60,9 @@ namespace WindowsFormsApp1
             // 
             // button_to_text
             // 
-            this.button_to_text.Location = new System.Drawing.Point(175, 158);
-            this.button_to_text.Margin = new System.Windows.Forms.Padding(4);
+            this.button_to_text.Location = new System.Drawing.Point(131, 126);
             this.button_to_text.Name = "button_to_text";
-            this.button_to_text.Size = new System.Drawing.Size(161, 56);
+            this.button_to_text.Size = new System.Drawing.Size(121, 45);
             this.button_to_text.TabIndex = 13;
             this.button_to_text.Text = "textbox  4/10  \r\n計算機5/12";
             this.button_to_text.UseVisualStyleBackColor = true;
@@ -80,10 +70,9 @@ namespace WindowsFormsApp1
             // 
             // exam1_button
             // 
-            this.exam1_button.Location = new System.Drawing.Point(193, 232);
-            this.exam1_button.Margin = new System.Windows.Forms.Padding(4);
+            this.exam1_button.Location = new System.Drawing.Point(145, 186);
             this.exam1_button.Name = "exam1_button";
-            this.exam1_button.Size = new System.Drawing.Size(163, 29);
+            this.exam1_button.Size = new System.Drawing.Size(122, 23);
             this.exam1_button.TabIndex = 14;
             this.exam1_button.Text = "期中考 4/17";
             this.exam1_button.UseVisualStyleBackColor = true;
@@ -91,10 +80,9 @@ namespace WindowsFormsApp1
             // 
             // Extra_button1
             // 
-            this.Extra_button1.Location = new System.Drawing.Point(384, 172);
-            this.Extra_button1.Margin = new System.Windows.Forms.Padding(4);
+            this.Extra_button1.Location = new System.Drawing.Point(288, 138);
             this.Extra_button1.Name = "Extra_button1";
-            this.Extra_button1.Size = new System.Drawing.Size(176, 29);
+            this.Extra_button1.Size = new System.Drawing.Size(132, 23);
             this.Extra_button1.TabIndex = 15;
             this.Extra_button1.Text = "終極密碼 5/1";
             this.Extra_button1.UseVisualStyleBackColor = true;
@@ -102,27 +90,36 @@ namespace WindowsFormsApp1
             // 
             // Timer_button
             // 
-            this.Timer_button.Location = new System.Drawing.Point(27, 300);
-            this.Timer_button.Margin = new System.Windows.Forms.Padding(4);
+            this.Timer_button.Location = new System.Drawing.Point(20, 240);
             this.Timer_button.Name = "Timer_button";
-            this.Timer_button.Size = new System.Drawing.Size(152, 38);
+            this.Timer_button.Size = new System.Drawing.Size(114, 30);
             this.Timer_button.TabIndex = 16;
             this.Timer_button.Text = "計時器 5/8";
             this.Timer_button.UseVisualStyleBackColor = true;
             this.Timer_button.Click += new System.EventHandler(this.Timer_button_Click);
             // 
+            // checkbox_button
+            // 
+            this.checkbox_button.Location = new System.Drawing.Point(163, 240);
+            this.checkbox_button.Name = "checkbox_button";
+            this.checkbox_button.Size = new System.Drawing.Size(175, 30);
+            this.checkbox_button.TabIndex = 17;
+            this.checkbox_button.Text = "checkbox  版面設計(dock) 5/15";
+            this.checkbox_button.UseVisualStyleBackColor = true;
+            this.checkbox_button.Click += new System.EventHandler(this.checkbox_button_Click_1);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1107, 588);
+            this.ClientSize = new System.Drawing.Size(830, 470);
+            this.Controls.Add(this.checkbox_button);
             this.Controls.Add(this.Timer_button);
             this.Controls.Add(this.Extra_button1);
             this.Controls.Add(this.exam1_button);
             this.Controls.Add(this.button_to_text);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -132,13 +129,12 @@ namespace WindowsFormsApp1
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button_to_text;
         private System.Windows.Forms.Button exam1_button;
-        private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button Extra_button1;
         private System.Windows.Forms.Button Timer_button;
+        private System.Windows.Forms.Button checkbox_button;
     }
 }
 

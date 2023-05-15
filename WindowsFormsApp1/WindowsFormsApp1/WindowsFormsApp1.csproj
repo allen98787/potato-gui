@@ -70,6 +70,12 @@
     <Compile Include="form3 4_17 exam1.Designer.cs">
       <DependentUpon>form3 4_17 exam1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form5 5_15 checkbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5 5_15 checkbox.Designer.cs">
+      <DependentUpon>Form5 5_15 checkbox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form4 5_8.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form4 5_8.resx">
       <DependentUpon>Form4 5_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5 5_15 checkbox.resx">
+      <DependentUpon>Form5 5_15 checkbox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEX 5_1.resx">
       <DependentUpon>FormEX 5_1.cs</DependentUpon>

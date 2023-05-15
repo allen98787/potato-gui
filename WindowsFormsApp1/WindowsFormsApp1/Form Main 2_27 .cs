@@ -17,13 +17,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
 
         }
-
-
-        private void label1_Click(object sender, EventArgs e) //標籤1
-        {
-            MessageBox.Show("123");
-        }
-
+       
         private void button1_Click(object sender, EventArgs e)//按鈕1
         {
             MessageBox.Show("3/13");
@@ -60,6 +54,12 @@ namespace WindowsFormsApp1
         {
             Form form4_timer = new Form4_5_8();
             form4_timer.Show();
+        }
+
+        private void checkbox_button_Click_1(object sender, EventArgs e)
+        {
+            Form form5_checkbox = new Form5();
+            form5_checkbox.Show();
         }
     }
 }
