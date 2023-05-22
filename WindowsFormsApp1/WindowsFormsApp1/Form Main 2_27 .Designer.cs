@@ -36,6 +36,7 @@ namespace WindowsFormsApp1
             this.Extra_button1 = new System.Windows.Forms.Button();
             this.Timer_button = new System.Windows.Forms.Button();
             this.checkbox_button = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // button1
@@ -102,17 +103,25 @@ namespace WindowsFormsApp1
             // 
             this.checkbox_button.Location = new System.Drawing.Point(163, 240);
             this.checkbox_button.Name = "checkbox_button";
-            this.checkbox_button.Size = new System.Drawing.Size(175, 30);
+            this.checkbox_button.Size = new System.Drawing.Size(206, 30);
             this.checkbox_button.TabIndex = 17;
-            this.checkbox_button.Text = "checkbox  版面設計(dock) 5/15";
+            this.checkbox_button.Text = "checkbox   5/15 版面設計(panel dock ) 5/22";
             this.checkbox_button.UseVisualStyleBackColor = true;
             this.checkbox_button.Click += new System.EventHandler(this.checkbox_button_Click_1);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(20, 20);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.TabIndex = 18;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 470);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.checkbox_button);
             this.Controls.Add(this.Timer_button);
             this.Controls.Add(this.Extra_button1);
@@ -135,6 +144,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button Extra_button1;
         private System.Windows.Forms.Button Timer_button;
         private System.Windows.Forms.Button checkbox_button;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
