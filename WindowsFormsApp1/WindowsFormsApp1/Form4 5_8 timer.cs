@@ -47,5 +47,11 @@ namespace WindowsFormsApp1
             timer_label2.Text = String.Format("{0}秒", count2.ToString());
         }
 
+        /* private void 
+        {
+        timer_label2.Text = String.Format("{0}秒", count2++.ToString());
+
+
+        }*/
     }
 }
