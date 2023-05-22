@@ -43,10 +43,9 @@ namespace WindowsFormsApp1
             // 
             this.timer_label1.AutoSize = true;
             this.timer_label1.Font = new System.Drawing.Font("新細明體", 24F);
-            this.timer_label1.Location = new System.Drawing.Point(86, 60);
-            this.timer_label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.timer_label1.Location = new System.Drawing.Point(64, 48);
             this.timer_label1.Name = "timer_label1";
-            this.timer_label1.Size = new System.Drawing.Size(76, 40);
+            this.timer_label1.Size = new System.Drawing.Size(62, 32);
             this.timer_label1.TabIndex = 0;
             this.timer_label1.Text = "0秒";
             // 
@@ -64,17 +63,19 @@ namespace WindowsFormsApp1
             // 
             this.timer_label2.AutoSize = true;
             this.timer_label2.Font = new System.Drawing.Font("新細明體", 25F);
-            this.timer_label2.Location = new System.Drawing.Point(495, 60);
+            this.timer_label2.Location = new System.Drawing.Point(371, 48);
+            this.timer_label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.timer_label2.Name = "timer_label2";
-            this.timer_label2.Size = new System.Drawing.Size(80, 42);
+            this.timer_label2.Size = new System.Drawing.Size(65, 34);
             this.timer_label2.TabIndex = 1;
             this.timer_label2.Text = "0秒";
             // 
             // timer2_start_bt
             // 
-            this.timer2_start_bt.Location = new System.Drawing.Point(382, 142);
+            this.timer2_start_bt.Location = new System.Drawing.Point(286, 114);
+            this.timer2_start_bt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.timer2_start_bt.Name = "timer2_start_bt";
-            this.timer2_start_bt.Size = new System.Drawing.Size(96, 49);
+            this.timer2_start_bt.Size = new System.Drawing.Size(72, 39);
             this.timer2_start_bt.TabIndex = 2;
             this.timer2_start_bt.Text = "開始";
             this.timer2_start_bt.UseVisualStyleBackColor = true;
@@ -82,9 +83,10 @@ namespace WindowsFormsApp1
             // 
             // timer2_pause_button
             // 
-            this.timer2_pause_button.Location = new System.Drawing.Point(515, 142);
+            this.timer2_pause_button.Location = new System.Drawing.Point(386, 114);
+            this.timer2_pause_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.timer2_pause_button.Name = "timer2_pause_button";
-            this.timer2_pause_button.Size = new System.Drawing.Size(86, 49);
+            this.timer2_pause_button.Size = new System.Drawing.Size(64, 39);
             this.timer2_pause_button.TabIndex = 3;
             this.timer2_pause_button.Text = "暫停";
             this.timer2_pause_button.UseVisualStyleBackColor = true;
@@ -92,9 +94,10 @@ namespace WindowsFormsApp1
             // 
             // timer2_zero_button
             // 
-            this.timer2_zero_button.Location = new System.Drawing.Point(636, 142);
+            this.timer2_zero_button.Location = new System.Drawing.Point(477, 114);
+            this.timer2_zero_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.timer2_zero_button.Name = "timer2_zero_button";
-            this.timer2_zero_button.Size = new System.Drawing.Size(99, 48);
+            this.timer2_zero_button.Size = new System.Drawing.Size(74, 38);
             this.timer2_zero_button.TabIndex = 4;
             this.timer2_zero_button.Text = "歸零";
             this.timer2_zero_button.UseVisualStyleBackColor = true;
@@ -102,15 +105,14 @@ namespace WindowsFormsApp1
             // 
             // Form4_5_8
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(820, 263);
+            this.ClientSize = new System.Drawing.Size(615, 210);
             this.Controls.Add(this.timer2_zero_button);
             this.Controls.Add(this.timer2_pause_button);
             this.Controls.Add(this.timer2_start_bt);
             this.Controls.Add(this.timer_label2);
             this.Controls.Add(this.timer_label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form4_5_8";
             this.Text = "Form4_5_8";
             this.ResumeLayout(false);

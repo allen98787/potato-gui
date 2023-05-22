@@ -32,7 +32,8 @@ namespace WindowsFormsApp1
         }
         private void timer2_start_bt_Click(object sender, EventArgs e)   //timer2開始按鍵
         {
-            timer2.Start();
+            //timer2.Start();
+            timer2.Enabled = true;
         }
         private void timer2_pause_button_Click(object sender, EventArgs e) //暫停  
         {
@@ -40,9 +41,11 @@ namespace WindowsFormsApp1
         }
         private void timer2_zero_button_Click(object sender, EventArgs e)
         {
-            timer2.Stop();
+            //timer2.Stop();
+            timer2.Enabled = true;
             count2 = 0;
             timer_label2.Text = String.Format("{0}秒", count2.ToString());
         }
+
     }
 }
