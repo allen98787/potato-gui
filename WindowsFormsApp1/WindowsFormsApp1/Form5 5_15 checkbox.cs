@@ -18,19 +18,50 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-           /* if (checkBox1.Checked)  //只有勾選才會觸發
-            
        
-            MessageBox.Show(checkBox1.Text+ "已被按下");
-            CheckedListBox1.Items.Add("Sunday", CheckState.Checked);
-            CheckedListBox1.Items.Add("Monday", CheckState.Unchecked);
-            CheckedListBox1.Items.Add("Tuesday", CheckState.Indeterminate);*/
-            //http://csharp.net-informations.com/gui/cs-checkedlistbox.htm
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string mainFood = "";
+
+            foreach(Control c in panel1.Controls)
+            {
+                if (c is CheckBox)
+                { 
+                    if(((CheckBox)c).Checked == true)
+                    {
+                        mainFood += c.Text + " ";
+                    }
+                }
+            }
+            string sideFood = "";
+
+            foreach (Control c in panel2.Controls)
+            {
+                if (c is CheckBox)
+                {
+                    if (((CheckBox)c).Checked == true)
+                    {
+                        sideFood += c.Text + " ";
+                    }
+                }
+            }
+            MessageBox.Show("主食:" + mainFood+Environment.NewLine+"配菜:" + sideFood);
         }
 
-        
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string Spicy = "";
+            foreach (Control c in panel2.Controls)
+            {
+                if (c is CheckBox)
+                {
+                    if (((CheckBox)c).Checked == true)
+                    {
+                        Spicy += c.Text + " ";
+                    }
+                }
+            }
+        }
     }
 }
