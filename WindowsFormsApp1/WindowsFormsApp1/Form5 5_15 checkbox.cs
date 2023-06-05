@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO; //Files input output
 
 namespace WindowsFormsApp1
 {
@@ -16,6 +17,10 @@ namespace WindowsFormsApp1
         public Form5()
         {
             InitializeComponent();
+            File.WriteAllText("Temp.txt","HI");  //.csv(逗點分隔值檔案)可用於
+            File.AppendAllText("Temp.txt","IH"); // 不同程式之間的資料轉換
+            String input = File.ReadAllText("Temp.txt");
+            MessageBox.Show(input);
         }
 
        
@@ -54,14 +59,15 @@ namespace WindowsFormsApp1
             string Spicy = "";
             foreach (Control c in panel2.Controls)
             {
-                if (c is CheckBox)
+                if (c is CheckedListBox)
                 {
-                    if (((CheckBox)c).Checked == true)
+                    if (((CheckedListBox)c).GetItemCheckState == CheckState.Checked)//https://stackoverflow.com/questions/24074470/c-sharp-checkedlistbox-if-checked
                     {
                         Spicy += c.Text + " ";
                     }
                 }
             }
         }
+
     }
 }

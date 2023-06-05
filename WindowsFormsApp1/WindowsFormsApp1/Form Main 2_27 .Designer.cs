@@ -101,11 +101,11 @@ namespace WindowsFormsApp1
             // 
             // checkbox_button
             // 
-            this.checkbox_button.Location = new System.Drawing.Point(163, 240);
+            this.checkbox_button.Location = new System.Drawing.Point(163, 232);
             this.checkbox_button.Name = "checkbox_button";
-            this.checkbox_button.Size = new System.Drawing.Size(206, 30);
+            this.checkbox_button.Size = new System.Drawing.Size(206, 38);
             this.checkbox_button.TabIndex = 17;
-            this.checkbox_button.Text = "checkbox   5/15 版面設計(panel dock ) 5/22";
+            this.checkbox_button.Text = "checkbox   5/15 \r\n版面設計(panel dock ) 5/22   MENU\r\n\r\n";
             this.checkbox_button.UseVisualStyleBackColor = true;
             this.checkbox_button.Click += new System.EventHandler(this.checkbox_button_Click_1);
             // 
