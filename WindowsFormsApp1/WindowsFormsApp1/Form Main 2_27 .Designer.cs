@@ -37,6 +37,7 @@ namespace WindowsFormsApp1
             this.Timer_button = new System.Windows.Forms.Button();
             this.checkbox_button = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -105,7 +106,7 @@ namespace WindowsFormsApp1
             this.checkbox_button.Name = "checkbox_button";
             this.checkbox_button.Size = new System.Drawing.Size(206, 38);
             this.checkbox_button.TabIndex = 17;
-            this.checkbox_button.Text = "checkbox   5/15 \r\n版面設計(panel dock ) 5/22   MENU\r\n\r\n";
+            this.checkbox_button.Text = "期末專案 6/12       checkbox   5/15 \r\n版面設計(panel dock ) 5/22   \r\n\r\n";
             this.checkbox_button.UseVisualStyleBackColor = true;
             this.checkbox_button.Click += new System.EventHandler(this.checkbox_button_Click_1);
             // 
@@ -116,11 +117,22 @@ namespace WindowsFormsApp1
             this.panel1.Size = new System.Drawing.Size(200, 100);
             this.panel1.TabIndex = 18;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(388, 232);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(170, 38);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "期末專案Extra";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 470);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.checkbox_button);
             this.Controls.Add(this.Timer_button);
@@ -145,6 +157,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button Timer_button;
         private System.Windows.Forms.Button checkbox_button;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button3;
     }
 }
 

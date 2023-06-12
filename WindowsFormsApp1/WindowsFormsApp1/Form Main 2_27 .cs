@@ -62,6 +62,9 @@ namespace WindowsFormsApp1
             form5_checkbox.Show();
         }
 
-       
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Form formFinal = new Form5_EX();
+        }
     }
 }

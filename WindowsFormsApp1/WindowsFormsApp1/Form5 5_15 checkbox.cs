@@ -17,19 +17,19 @@ namespace WindowsFormsApp1
         public Form5()
         {
             InitializeComponent();
-            File.WriteAllText("Temp.txt","HI");  //.csv(逗點分隔值檔案)可用於
-            File.AppendAllText("Temp.txt","IH"); // 不同程式之間的資料轉換
+            /*File.WriteAllText("Temp.csv","HI");//覆蓋文件內全部文字          .csv(逗點分隔值檔案)可用於
+            File.AppendAllText("Temp.txt","IH");//                     ^不同程式之間的資料轉換
             String input = File.ReadAllText("Temp.txt");
-            MessageBox.Show(input);
+            MessageBox.Show(input);*/
+            if (!File.Exists("OrderData.csv"))
+                File.WriteAllText("OrderData.csv", "時間,主食,配餐\n", Encoding.UTF8);
         }
-
-       
-
         private void button4_Click(object sender, EventArgs e)
         {
             string mainFood = "";
-
-            foreach(Control c in panel1.Controls)
+            string sideFood = "";
+            string takeaway = "";
+            foreach (Control c in panel1.Controls)
             {
                 if (c is CheckBox)
                 { 
@@ -38,9 +38,14 @@ namespace WindowsFormsApp1
                         mainFood += c.Text + " ";
                     }
                 }
+                else if (c is RadioButton)
+                {
+                    if (((RadioButton)c).Checked == true)
+                    {
+                        takeaway += c.Text + " ";
+                    }
+                }
             }
-            string sideFood = "";
-
             foreach (Control c in panel2.Controls)
             {
                 if (c is CheckBox)
@@ -51,23 +56,44 @@ namespace WindowsFormsApp1
                     }
                 }
             }
-            MessageBox.Show("主食:" + mainFood+Environment.NewLine+"配菜:" + sideFood);
-        }
+            
+            //MessageBox.Show("主食:" + mainFood+Environment.NewLine+"配菜:" + sideFood + takeaway);
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string Spicy = "";
+            DateTime curentDateTime = DateTime.Now;
+            string formateDateTime = curentDateTime.ToString("yyyy/MM/dd HH:mm:ss");
+            File.AppendAllText("OrderData.csv", formateDateTime+"," + mainFood+ "," + sideFood+ "," + takeaway+ "\n");
+            MessageBox.Show("點餐成功");
+
+           
+            foreach (Control c in panel1.Controls)
+            {
+                if (c is CheckBox)
+                {
+                    if (((CheckBox)c).Checked == true)
+                    {
+                        ((CheckBox)c).Checked = false;
+                    }
+                }
+                else if (c is RadioButton)
+                {
+                    if (((RadioButton)c).Checked == true)
+                    {
+                        ((RadioButton)c).Checked = false;
+                    }
+                }
+            }
             foreach (Control c in panel2.Controls)
             {
-                if (c is CheckedListBox)
+                if (c is CheckBox)
                 {
-                    if (((CheckedListBox)c).GetItemCheckState == CheckState.Checked)//https://stackoverflow.com/questions/24074470/c-sharp-checkedlistbox-if-checked
+                    if (((CheckBox)c).Checked == true)
                     {
-                        Spicy += c.Text + " ";
+                        ((CheckBox)c).Checked = false;
                     }
                 }
             }
         }
 
+     
     }
 }
