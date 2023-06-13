@@ -64,7 +64,9 @@ namespace WindowsFormsApp1
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            Form formFinal = new Form5_EX();
+            Form formFX = new FormFX();
+            formFX.Show();
         }
     }
+    
 }
