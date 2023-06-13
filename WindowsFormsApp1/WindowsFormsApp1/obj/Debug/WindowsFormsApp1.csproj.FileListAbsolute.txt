@@ -30,3 +30,5 @@ D:\程式設計\github\potato-gui\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Wi
 D:\程式設計\github\potato-gui\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form4_5_8.resources
 C:\Users\MEGAS\Desktop\potato-gui\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form4_5_8.resources
 C:\Users\MEGAS\Desktop\potato-gui\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form5.resources
+D:\程式設計\github\potato-gui\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form5.resources
+D:\程式設計\github\potato-gui\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormFX.resources

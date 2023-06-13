@@ -21,79 +21,96 @@ namespace WindowsFormsApp1
             File.AppendAllText("Temp.txt","IH");//                     ^不同程式之間的資料轉換
             String input = File.ReadAllText("Temp.txt");
             MessageBox.Show(input);*/
+           
             if (!File.Exists("OrderData.csv"))
                 File.WriteAllText("OrderData.csv", "時間,主食,配餐\n", Encoding.UTF8);
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            string mainFood = "";
-            string sideFood = "";
-            string takeaway = "";
-            foreach (Control c in panel1.Controls)
+            if (checkBox1.Checked == false & checkBox2.Checked == false & checkBox3.Checked == false & checkBox4.Checked == false)
             {
-                if (c is CheckBox)
-                { 
-                    if(((CheckBox)c).Checked == true)
-                    {
-                        mainFood += c.Text + " ";
-                    }
-                }
-                else if (c is RadioButton)
-                {
-                    if (((RadioButton)c).Checked == true)
-                    {
-                        takeaway += c.Text + " ";
-                    }
-                }
+                MessageBox.Show("請選擇菜品");
             }
-            foreach (Control c in panel2.Controls)
+            else
             {
-                if (c is CheckBox)
+                if (radioButton1.Checked == false & radioButton2.Checked == false)
                 {
-                    if (((CheckBox)c).Checked == true)
-                    {
-                        sideFood += c.Text + " ";
-                    }
+                    MessageBox.Show("請選擇外帶或內用");
                 }
-            }
-            
-            //MessageBox.Show("主食:" + mainFood+Environment.NewLine+"配菜:" + sideFood + takeaway);
+                else
+                {
+                    string mainFood = "";
+                    string sideFood = "";
+                    string takeaway = "";
+                    foreach (Control c in panel1.Controls)
+                    {
+                        if (c is CheckBox)
+                        {
+                            if (((CheckBox)c).Checked == true)
+                            {
+                                mainFood += c.Text + " ";
+                            }
+                        }
+                        else if (c is RadioButton)
+                        {
+                            if (((RadioButton)c).Checked == true)
+                            {
+                                takeaway += c.Text + " ";
+                            }
+                        }
+                    }
+                    foreach (Control c in panel2.Controls)
+                    {
+                        if (c is CheckBox)
+                        {
+                            if (((CheckBox)c).Checked == true)
+                            {
+                                sideFood += c.Text + " ";
+                            }
+                        }
+                    }
 
-            DateTime curentDateTime = DateTime.Now;
-            string formateDateTime = curentDateTime.ToString("yyyy/MM/dd HH:mm:ss");
-            File.AppendAllText("OrderData.csv", formateDateTime+"," + mainFood+ "," + sideFood+ "," + takeaway+ "\n");
-            MessageBox.Show("點餐成功");
+                    //MessageBox.Show("主食:" + mainFood+Environment.NewLine+"配菜:" + sideFood + takeaway);
 
-           
-            foreach (Control c in panel1.Controls)
-            {
-                if (c is CheckBox)
-                {
-                    if (((CheckBox)c).Checked == true)
+                    DateTime curentDateTime = DateTime.Now;
+                    string formateDateTime = curentDateTime.ToString("yyyy/MM/dd HH:mm:ss");
+                    File.AppendAllText("OrderData.csv", formateDateTime + "," + mainFood + "," + sideFood + "," + takeaway + "\n");
+                    MessageBox.Show("點餐成功");
+
+                    foreach (Control c in panel1.Controls)
                     {
-                        ((CheckBox)c).Checked = false;
+                        if (c is CheckBox)
+                        {
+                            if (((CheckBox)c).Checked == true)
+                            {
+                                ((CheckBox)c).Checked = false;
+                            }
+                        }
+                        else if (c is RadioButton)
+                        {
+                            if (((RadioButton)c).Checked == true)
+                            {
+                                ((RadioButton)c).Checked = false;
+                            }
+                        }
                     }
-                }
-                else if (c is RadioButton)
-                {
-                    if (((RadioButton)c).Checked == true)
+                    foreach (Control c in panel2.Controls)
                     {
-                        ((RadioButton)c).Checked = false;
-                    }
-                }
-            }
-            foreach (Control c in panel2.Controls)
-            {
-                if (c is CheckBox)
-                {
-                    if (((CheckBox)c).Checked == true)
-                    {
-                        ((CheckBox)c).Checked = false;
+                        if (c is CheckBox)
+                        {
+                            if (((CheckBox)c).Checked == true)
+                            {
+                                ((CheckBox)c).Checked = false;
+                            }
+                        }
                     }
                 }
             }
         }
 
-     
+        private void DeleteBT_Click(object sender, EventArgs e)
+        {
+            File.Delete("OrderData.csv");
+        }
     }
 }

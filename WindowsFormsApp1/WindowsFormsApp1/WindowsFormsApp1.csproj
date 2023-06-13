@@ -88,11 +88,11 @@
     <Compile Include="FormEX 5_1.Designer.cs">
       <DependentUpon>FormEX 5_1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5_EX 6_12.cs">
+    <Compile Include="FormFX.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5_EX 6_12.Designer.cs">
-      <DependentUpon>Form5_EX 6_12.cs</DependentUpon>
+    <Compile Include="FormFX.Designer.cs">
+      <DependentUpon>FormFX.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -116,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEX 5_1.resx">
       <DependentUpon>FormEX 5_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFX.resx">
+      <DependentUpon>FormFX.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
