@@ -13,19 +13,19 @@ namespace WindowsFormsApp1
 {
     public partial class FormFX : Form
     {
-        int slot = 1;
+        //int slot = 1;
         public FormFX()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ShowOrder_Click(object sender, EventArgs e)
         {
             
             if (File.Exists("OrderData.csv"))
             {
                 string order = File.ReadAllText("OrderData.csv");
-                string[] meal = order.Split('\n');
+                string[] meal = order.Split('\n');//字串.Split('分割線')
                 foreach (var word in meal)
                 {
                     checkedListBox1.Items.Add($"{word}");
@@ -39,5 +39,21 @@ namespace WindowsFormsApp1
             }
 
         }
+
+       
+            private void DeleteBT_Click(object sender, EventArgs e)
+            {
+                if (MessageBox.Show("確定刪除點單列表?","", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                    MessageBox.Show("點單列表已刪除");
+                    File.Delete("OrderData.csv");
+                }
+                else
+                {
+                   
+                }
+            
+            }
+        
     }
 }

@@ -29,31 +29,30 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.DeleteBT = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button4
             // 
             this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button4.Location = new System.Drawing.Point(0, 533);
+            this.button4.Location = new System.Drawing.Point(0, 332);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(1067, 29);
+            this.button4.Size = new System.Drawing.Size(366, 29);
             this.button4.TabIndex = 5;
             this.button4.Text = "ORDER";
             this.button4.UseVisualStyleBackColor = true;
@@ -61,41 +60,15 @@ namespace WindowsFormsApp1
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.checkBox2);
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("微軟正黑體", 15F, System.Drawing.FontStyle.Bold);
-            this.panel1.Location = new System.Drawing.Point(151, 178);
+            this.panel1.Location = new System.Drawing.Point(13, 13);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(216, 349);
+            this.panel1.Size = new System.Drawing.Size(216, 96);
             this.panel1.TabIndex = 6;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(0, 122);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 36);
-            this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "外帶";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(0, 86);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 36);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "內用";
-            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
@@ -134,15 +107,43 @@ namespace WindowsFormsApp1
             this.label1.TabIndex = 2;
             this.label1.Text = "主餐區";
             // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radioButton2.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.radioButton2.Location = new System.Drawing.Point(0, 0);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(217, 46);
+            this.radioButton2.TabIndex = 11;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "外帶";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radioButton1.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.radioButton1.Location = new System.Drawing.Point(0, 46);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(217, 46);
+            this.radioButton1.TabIndex = 10;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "內用";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.checkBox3);
             this.panel2.Controls.Add(this.checkBox4);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(471, 178);
+            this.panel2.Location = new System.Drawing.Point(13, 117);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(216, 349);
+            this.panel2.Size = new System.Drawing.Size(216, 92);
             this.panel2.TabIndex = 7;
             // 
             // checkBox3
@@ -183,28 +184,21 @@ namespace WindowsFormsApp1
             this.label2.TabIndex = 2;
             this.label2.Text = "配菜區";
             // 
-            // contextMenuStrip1
+            // panel3
             // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // DeleteBT
-            // 
-            this.DeleteBT.Location = new System.Drawing.Point(945, 492);
-            this.DeleteBT.Name = "DeleteBT";
-            this.DeleteBT.Size = new System.Drawing.Size(96, 34);
-            this.DeleteBT.TabIndex = 8;
-            this.DeleteBT.Text = "重新點單";
-            this.DeleteBT.UseVisualStyleBackColor = true;
-            this.DeleteBT.Click += new System.EventHandler(this.DeleteBT_Click);
+            this.panel3.Controls.Add(this.radioButton1);
+            this.panel3.Controls.Add(this.radioButton2);
+            this.panel3.Location = new System.Drawing.Point(12, 216);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(217, 98);
+            this.panel3.TabIndex = 12;
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 562);
-            this.Controls.Add(this.DeleteBT);
+            this.ClientSize = new System.Drawing.Size(366, 361);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);
@@ -215,6 +209,8 @@ namespace WindowsFormsApp1
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -229,9 +225,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button DeleteBT;
+        private System.Windows.Forms.Panel panel3;
     }
 }
